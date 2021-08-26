@@ -55,11 +55,11 @@
       <td><li>RabbitMQ</li></td>
       <td><li>Express</li></td>
       <td><li>PostgreSQL</li></td>
-      <td><li>jsonwebtoken (JWT)</li></td>
+      <td><li>stripe</li></td>
       <td><li>nodemailer</li></td>
     </tr>
    <tr>
-    <td><li>stripe</li></td>
+    <td><li>jsonwebtoken (JWT)</li></td>
     <td><li>joi</li></td>
     <td><li>AWS s3</li></td>
     <td><li>AWS EC2</li></td>
