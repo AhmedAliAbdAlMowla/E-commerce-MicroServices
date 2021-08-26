@@ -54,7 +54,6 @@
       <td><li>Node.js</li> </td>
       <td><li>RabbitMQ</li></td>
       <td><li>Express</li></td>
-      <td><li>PostgreSQL</li></td>
       <td><li>stripe</li></td>
       <td><li>nodemailer</li></td>
     </tr>
@@ -65,9 +64,11 @@
     <td><li>AWS EC2</li></td>
     <td><li>Nginx</li></td>
     <td><li>Swagger</li></td>
-    <td><li>Docker</li></td>
   </tr>
-
+  <tr>
+    <td><li>PostgreSQL</li></td>
+    <td><li>Docker</li></td>
+   </tr>
  </table>
  
  <h2 align="center">Author</h2>
