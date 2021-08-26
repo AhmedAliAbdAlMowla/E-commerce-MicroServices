@@ -1,4 +1,4 @@
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)]()
 <h1 align="center">E-commerce-Micro-Services 👨‍💻🚀🔥🔥</h1>
 
 
@@ -6,7 +6,7 @@
 
 
  <h2 align="center">Welcome! 👋</h2>
- 
+  <h4 align="center">Project status : under development⌛⏳.</h4>
   <h5 align="center">This project is an e-commerce API demo based on microservice architecture</h5>
 
 
