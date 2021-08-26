@@ -1,0 +1,22 @@
+CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
+_____________________________________________
+CREATE TABLE role(
+	role_id uuid DEFAULT uuid_generate_v4 (),
+	name VARCHAR(50) NOT NULL,
+	PRIMARY KEY (role_id) )
+__________________________________
+CREATE TABLE account(
+            user_id  uuid DEFAULT uuid_generate_v4 (),
+            first_name VARCHAR(50) NOT NULL,
+            last_name VARCHAR(50) NOT NULL,
+            password VARCHAR(255) NOT NULL,
+            email VARCHAR(255) UNIQUE NOT NULL,
+            phone_number VARCHAR(50) UNIQUE NOT NULL, 
+            role_id uuid REFERENCES role(role_id),
+            reset_password_token  VARCHAR(50),
+            reset_password_expires TIMESTAMP,
+            created_at TIMESTAMP,
+			PRIMARY KEY (user_id)
+            )
+_____________________________________________
+

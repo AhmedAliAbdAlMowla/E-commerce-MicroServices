@@ -1,0 +1,220 @@
+{
+  "openapi": "3.0.0",
+  "servers": [
+    {
+      "url": "http://localhost:5000/api/v1/",
+      "description": "Devlopment server (uses test data)",
+      "variables": {}
+    },
+    {
+      "url": "http://13.126.233.224/api/v1/",
+      "description": "Production server (uses live data)",
+      "variables": {},
+      "basePath": ""
+    }
+  ],
+  "info": {
+    "version": "v1",
+    "title": "E-commerce-API-Micro-Services [AUTH SERVICES]",
+    "description": "This is Endpoints for AUTH SERVICES was developed  by eng : Ahmed Ali  ✌️✌️ ",
+    "termsOfService": "",
+    "contact": {},
+    "license": { "name": "" }
+  },
+
+  "tags": [
+    {
+      "name": "User",
+      "description": "Everything about  User"
+    }
+  ],
+  "paths": {
+    "/users/login": {
+      "post": {
+        "summary": " login",
+        "operationId": "login",
+        "description": "you can use this end point to  login",
+        "parameters": [],
+        "responses": { "200": { "description": "", "headers": {} } },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "example": {
+                  "email": "ahmedabdalmola2017@gmail.com",
+                  "password": "#Ahmed123"
+                }
+              },
+              "example": "{\r\n    \"email\":\"ahmedabdalmola2017@gmail.com\",\r\n    \"password\": \"#Ahmed123\"\r\n}"
+            }
+          }
+        },
+        "tags": ["User"]
+      }
+    },
+    "/users/signup": {
+      "post": {
+        "summary": "signup",
+        "operationId": "signup",
+        "description": "you can use this end point to  signup",
+        "parameters": [],
+        "responses": { "200": { "description": "", "headers": {} } },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "example": {
+                  "firstName": "roman",
+                  "lastName": "protoqit",
+                  "email": "roman@protoqit.com",
+                  "password": "#Secret123",
+                  "phoneNumber": "+1235665689566"
+                }
+              },
+              "example": "{\r\n\r\n    \"firstName\":\"roman\",\r\n    \"lastName\":\"protoqit\",\r\n    \"email\":\"roman@protoqit.com\",\r\n   \n    \"password\":\"#Secret123\",\r\n  \"phoneNumber\": \"+1235665689566\"\r\n}"
+            }
+          }
+        },
+        "tags": ["User"]
+      }
+    },
+    "/users/account/password": {
+      "patch": {
+        "summary": "update password",
+        "operationId": "update password",
+        "description": "you can use this end point to  update password , you should have a old password and new password",
+        "responses": { "200": { "description": "", "headers": {} } },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "example": {
+                  "password": "#Ahmed888",
+                  "newPassword": "#Ahmed97"
+                }
+              },
+              "example": "{\r\n    \"password\":\"#Ahmed888\",\r\n    \"newPassword\":\"#Ahmed97\"\r\n}"
+            }
+          }
+        },
+        "tags": ["User"]
+      }
+    },
+    "/users/account/recover": {
+      "post": {
+        "summary": "Accunt  recover ",
+        "operationId": "recover",
+        "description": "you can use this end point to  recover accunt by give the email and send tokent to email",
+        "parameters": [],
+        "responses": { "200": { "description": "", "headers": {} } },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "example": { "email": "ahmedshekh@student.aast.edu" }
+              },
+              "example": "{\r\n    \"email\":\"ahmedshekh@student.aast.edu\"\r\n}"
+            }
+          }
+        },
+        "tags": ["User"]
+      }
+    },
+    "/users/account/token/check": {
+      "post": {
+        "summary": "Check token is valid or not valid",
+        "operationId": "checkToken",
+        "description": "you can use this end point to  check if the token is valid or not valid",
+        "parameters": [],
+        "responses": { "200": { "description": "", "headers": {} } },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": { "type": "object", "example": { "token": "d4a1ec" } },
+              "example": "{\r\n    \"token\":\"d4a1ec\"\r\n}"
+            }
+          }
+        },
+        "tags": ["User"]
+      }
+    },
+    "/users/account/password/reset": {
+      "post": {
+        "summary": "Reset password",
+        "operationId": "resetPassword",
+        "description": "you can use this end point to  reset password , you should have a tokent to confirm this operation ",
+        "parameters": [],
+        "responses": { "200": { "description": "", "headers": {} } },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "example": { "token": "f9a81d", "password": "#Ahmed97" }
+              },
+              "example": "{\r\n    \"token\":\"f9a81d\",\r\n    \"password\": \"#Ahmed97\"\r\n}"
+            }
+          }
+        },
+        "tags": ["User"]
+      }
+    }
+  },
+  "components": {
+    "parameters": {
+      "x-auth-token": {
+        "name": "x-auth-token",
+        "in": "header",
+        "required": true,
+        "style": "simple",
+        "schema": {
+          "type": "string"
+        }
+      },
+      "pageNumber": {
+        "name": "pageNumber",
+        "in": "query",
+        "required": true,
+        "style": "form",
+        "schema": { "type": "number" }
+      },
+      "pageSize": {
+        "name": "pageSize",
+        "in": "query",
+        "required": true,
+        "style": "form",
+        "schema": { "type": "number" }
+      },
+      "": {
+        "name": "",
+        "in": "query",
+        "required": true,
+        "style": "form",
+        "schema": { "type": "number" }
+      }
+    },
+    "securitySchemes": {
+      "ApiKeyAuth": {
+        "type": "apiKey",
+        "name": "x-auth-token",
+        "scheme": "bearer",
+        "description": "Enter JWT token",
+        "in": "header"
+      }
+    }
+  },
+  "security": [{ "ApiKeyAuth": [] }],
+
+  "externalDocs": { "url": "", "description": "" },
+  "warnings": []
+}
