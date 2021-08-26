@@ -1,21 +1,24 @@
-# E-commerce-Micro-Services 👨‍💻🚀🔥🔥
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+<h1 align="center">E-commerce-Micro-Services 👨‍💻🚀🔥🔥</h1>
 
 
-## Welcome! 👋
-This project is E-Commerce API depends microservice architecture,
-<pre>
-MICROSERVICES ARCHITECTURE                                Asynchronous Microservices Communication.    
-RabbitMQ                                                  DOCKER
-</pre>
 
+
+
+ <h2 align="center">Welcome! 👋</h2>
+ 
+  <h5 align="center">This project is an e-commerce API demo based on microservice architecture</h5>
+
+
+
+ <h2 align="center">Main Technologies</h2>
 <table>
   <tr>
-    <td>NODE.JS</td>
-    <td>MICROSERVICES ARCHITECTURE  </td>
+    <td>Node.js</td>
+    <td>MicroServices Architecture  </td>
      <td>Asynchronous Microservices Communication.  </td>
      <td>RabbitMQ</td>
-    <td>DOCKER</td>
+    <td>Docker</td>
   </tr>
   <tr>
      <td><img src="Designs/node_image.png" width=200 height=100></td>
@@ -35,21 +38,37 @@ RabbitMQ                                                  DOCKER
 
 ![System Design](./Designs/E-commerce_db_erd_final_form.png) 
 
+<pre>
+                                                           Notes   
+<li>Payment method depends on stripe.</li>                                                          
+<li>The shopping cart will implement in  frontend depend to the local storage.</li>
 
- ### Built with:
+</pre>
 
-<ul>
-<li class="has-line-data" data-line-start="15" data-line-end="16">Restful Api</li>
-<li class="has-line-data" data-line-start="16" data-line-end="17">Node.js</li> 
-  <li class="has-line-data" data-line-start="16" data-line-end="17">RabbitMQ</li>
-<li class="has-line-data" data-line-start="17" data-line-end="18">Express</li>
-<li class="has-line-data" data-line-start="18" data-line-end="19">PostgreSQL</li>
-<li class="has-line-data" data-line-start="19" data-line-end="20">jsonwebtoken (JWT)</li>
-<li class="has-line-data" data-line-start="20" data-line-end="21">nodemailer</li>
-<li class="has-line-data" data-line-start="21" data-line-end="22">joi</li>
-<li class="has-line-data" data-line-start="21" data-line-end="18">AWS s3</li>
-<li class="has-line-data" data-line-start="22" data-line-end="19">AWS EC2</li>
-<li class="has-line-data" data-line-start="23" data-line-end="20">Nginx</li>
-<li class="has-line-data" data-line-start="24" data-line-end="21">Swagger</li>
-<li class="has-line-data" data-line-start="25" data-line-end="22">Docker</li>
-</ul>
+ 
+<h2 align="center">Built with</h2>
+<table>
+  <tr>
+      <td><li color="grean">Restful Api</li></td>
+      <td><li>Node.js</li> </td>
+      <td><li>RabbitMQ</li></td>
+      <td><li>Express</li></td>
+      <td><li>PostgreSQL</li></td>
+      <td><li>jsonwebtoken (JWT)</li></td>
+      <td><li>nodemailer</li></td>
+    </tr>
+   <tr>
+    <td><li>stripe</li></td>
+    <td><li>joi</li></td>
+    <td><li>AWS s3</li></td>
+    <td><li>AWS EC2</li></td>
+    <td><li>Nginx</li></td>
+    <td><li>Swagger</li></td>
+    <td><li>Docker</li></td>
+  </tr>
+
+ </table>
+ 
+ <h2 align="center">Author</h2>
+  <h5 align="center"> <a href="https://www.linkedin.com/in/ahmedaliabdalmowla/">- LinkedIn-@ahmedaliabdalmowla/ </a> </h5>
+
